@@ -1,0 +1,19 @@
+{
+    "name": "hiraq/qiscus-model",
+    "description": "Modelling Qiscus with DDD using PHP",
+    "require": {
+        "phpunit/phpunit": "~4.4",
+		"php": ">=5.4"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Hiraq",
+            "email": "hrxwan@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

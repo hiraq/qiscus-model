@@ -1,7 +1,8 @@
 <?php
 namespace Qiscus\Activity;
 
-use Qiscus\Entity\Topic;
+use Qiscus\Entity\Topic as TopicEntity;
+use Qiscus\Repository\Topic as TopicRepo;
 
 abstract class Room
 {
@@ -11,7 +12,7 @@ abstract class Room
      * Room should be constructed
      * with valid topic entity
      */
-    public function __construct(Topic $topic)
+    public function __construct(TopicEntity $topic)
     {
         $this->loadedTopic = $topic;
     }
@@ -21,11 +22,5 @@ abstract class Room
      * they can add more topics inside
      * that room
      */
-    abstract public function addTopic($name);
-
-    /**
-     * User can select a Topic
-     * and then unsubscribe from selected Topic
-     */
-    abstract public function unsubscribeTopic(Topic $topic);
+    abstract public function addTopic(TopicRepo $topicRepo, TopicEntity $topic);
 }

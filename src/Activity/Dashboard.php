@@ -21,16 +21,12 @@ abstract class Dashboard
     /**
      * User can add more room
      * after they inside the dashboard
-     *
-     * @return boolean
      */
     abstract public function addRoom(RoomRepo $roomRepo, RoomEntity $room);
 
     /**
      * User can select Room
      * then delete it
-     *
-     * @return boolean
      */
     abstract public function deleteRoom(RoomRepo $roomRepo, $id);
 }

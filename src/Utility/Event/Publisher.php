@@ -19,7 +19,7 @@ trait Publisher
      * trigger an event
      * broadcast to all handlers
      */
-    public function trigger($eventName, $params = [])
+    public function trigger($eventName, $params = null)
     {
         /*
          * only broadcast
